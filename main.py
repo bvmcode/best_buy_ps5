@@ -20,10 +20,10 @@ def get_status():
     options.add_argument("--headless")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-gpu")
-    driver = webdriver.Chrome(chrome_options=options)
+    driver = webdriver.Chrome(executable_path='/home/bvmcode/best_buy_ps5/chromedriver', chrome_options=options)
     driver.get(URL)
     contents = driver.find_element_by_class_name("add-to-cart-button")
-    if contents.text != "Sold Out":
+    if contents.text == "Add to Cart":
         email()
 
     driver.close()

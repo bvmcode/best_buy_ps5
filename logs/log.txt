@@ -1,0 +1,2 @@
+/home/bvmcode/best_buy_ps5/main.py:23: DeprecationWarning: use options instead of chrome_options
+  driver = webdriver.Chrome(executable_path='/home/bvmcode/best_buy_ps5/chromedriver', chrome_options=options)
